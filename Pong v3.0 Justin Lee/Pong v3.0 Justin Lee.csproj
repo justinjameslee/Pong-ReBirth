@@ -1,0 +1,234 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{9DCCAA46-6BA9-4E04-ACE6-8BDE5366A59A}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Pong_v3._0_Justin_Lee</RootNamespace>
+    <AssemblyName>Pong v3.0 Justin Lee</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Controls.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Controls.Designer.cs">
+      <DependentUpon>Controls.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Credits.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Credits.Designer.cs">
+      <DependentUpon>Credits.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CreditsReal.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CreditsReal.Designer.cs">
+      <DependentUpon>CreditsReal.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form1.Designer.cs">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form2.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form2.Designer.cs">
+      <DependentUpon>Form2.cs</DependentUpon>
+    </Compile>
+    <Compile Include="HelpMenu.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="HelpMenu.Designer.cs">
+      <DependentUpon>HelpMenu.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MouseEasy.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MouseEasy.Designer.cs">
+      <DependentUpon>MouseEasy.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Multiplayer.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Multiplayer.Designer.cs">
+      <DependentUpon>Multiplayer.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Music.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Music.Designer.cs">
+      <DependentUpon>Music.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Singleplayer Difficulty.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Singleplayer Difficulty.Designer.cs">
+      <DependentUpon>Singleplayer Difficulty.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SinglePlayerControls.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SinglePlayerControls.Designer.cs">
+      <DependentUpon>SinglePlayerControls.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SinglePlayerNormal.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SinglePlayerNormal.Designer.cs">
+      <DependentUpon>SinglePlayerNormal.cs</DependentUpon>
+    </Compile>
+    <Compile Include="User_Name.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="User_Name.Designer.cs">
+      <DependentUpon>User_Name.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="Controls.resx">
+      <DependentUpon>Controls.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Credits.resx">
+      <DependentUpon>Credits.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CreditsReal.resx">
+      <DependentUpon>CreditsReal.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form1.resx">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form2.resx">
+      <DependentUpon>Form2.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="HelpMenu.resx">
+      <DependentUpon>HelpMenu.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MouseEasy.resx">
+      <DependentUpon>MouseEasy.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Multiplayer.resx">
+      <DependentUpon>Multiplayer.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Music.resx">
+      <DependentUpon>Music.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <EmbeddedResource Include="Singleplayer Difficulty.resx">
+      <DependentUpon>Singleplayer Difficulty.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SinglePlayerControls.resx">
+      <DependentUpon>SinglePlayerControls.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SinglePlayerNormal.resx">
+      <DependentUpon>SinglePlayerNormal.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="User_Name.resx">
+      <DependentUpon>User_Name.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\pong_hit.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\pong_hit2.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\pong_hit3.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\game_over.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\PongIntro.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <COMReference Include="AxWMPLib">
+      <Guid>{6BF52A50-394A-11D3-B153-00C04F79FAA6}</Guid>
+      <VersionMajor>1</VersionMajor>
+      <VersionMinor>0</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>aximp</WrapperTool>
+      <Isolated>False</Isolated>
+    </COMReference>
+    <COMReference Include="WMPLib">
+      <Guid>{6BF52A50-394A-11D3-B153-00C04F79FAA6}</Guid>
+      <VersionMajor>1</VersionMajor>
+      <VersionMinor>0</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>tlbimp</WrapperTool>
+      <Isolated>False</Isolated>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </COMReference>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\mouseover.wav" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
